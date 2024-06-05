@@ -325,7 +325,10 @@ class _QrContentView extends StatelessWidget {
       child: Container(
         width: edgeLength,
         height: edgeLength,
-        color: backgroundColor,
+        decoration: BoxDecoration(
+          color: backgroundColor,
+          borderRadius: BorderRadiusDirectional.circular(16),
+        ),
         child: Padding(
           padding: padding!,
           child: child,
